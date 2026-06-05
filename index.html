@@ -5,48 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portafolio de Luisangel Pardave, Software Engineer & Designer. Especializado en desarrollo Backend" />
     <title>Luisangel Pardave | Software Engineer & Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header><h1>luisangel-pardave-portafolio</h1></header>
-    
-    <nav>
-      <ul>
-        <li><a href="index.html">index</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="experience.html">experience</a></li>
-        <li><a href="portfolio.html">portfolio</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </ul>
+      <!-- ═══════════════════════════════════
+          NAVBAR — Barra superior tipo IDE
+  ═══════════════════════════════════ -->
+ <header class="header">
+
+    <!-- Titlebar: botones de ventana -->
+    <div class="titlebar">
+      <div class="win-buttons">
+        <span class="win-btn btn-red"></span>
+        <span class="win-btn btn-yellow"></span>
+        <span class="win-btn btn-green"></span>
+      </div>
+      <span class="win-title">luisangel-pardave-portfolio</span>
+      <div class="win-icons">
+        <span>&#9679;</span>
+        <span>&#9633;</span>
+        <span>&#10005;</span>
+      </div>
+    </div>
+
+    <!-- Tabs tipo IDE -->
+    <nav class="tabs">
+      <a href="index.html" class="tab active">
+        <span class="dot dot-orange"></span>
+        index.html
+        <span class="tab-close">&#10005;</span>
+      </a>
+      <a href="about.html" class="tab">
+        <span class="dot dot-blue"></span>
+        about.html
+      </a>
+      <a href="portfolio.html" class="tab">
+        <span class="dot dot-purple"></span>
+        portfolio/
+      </a>
+      <a href="experience.html" class="tab">
+        <span class="dot dot-green"></span>
+        experience.html
+      </a>
+      <a href="contact.html" class="tab">
+        <span class="dot dot-yellow"></span>
+        contact.html
+      </a>
+      <div class="tabs-spacer"></div>
+      <span class="breadcrumb">~/portfolio/src/pages/</span>
     </nav>
 
-  <main>
+  </header>
   
-    <h2>Hola, mi nombre</h2>
-    <h1>Luisangel Pardave Maravi</h1>
-    <h2>Software Engineer & Designer</h2>
 
-    <h3>
-      <a
-        href=https://www.linkedin.com/in/luisangel-pardave-maravi-021509361/
-        target="_blank"
-        >LinkedIn</a
-      >
-    </h3>
+  
+    <!-- ═══════════════════════════════════
+       HERO — Sección principal
+  ═══════════════════════════════════ -->
+    <main class="hero">
+      <!-- Fondo con overlay -->
+      <div class= "img/foto-perfil.jpg"></div>
+      <div class="hero-overlay"></div>
 
-   <h3><a href=https://github.com/luispardavemaravi-sketch target="_blank">GitHub</a></h3>
+      <!-- Partículas decorativas -->
+      <div class="particles" id="particles"></div>
 
-   <h3><a href=https://www.instagram.com/luisangel__2006/ target="_blank">Instagram</a></h3>
+      <!-- Contenido centrado -->
+      <div class="hero-content">
+        <p class="greeting">Hola, mi nombre es</p>
+
+        <h1 class="name">
+          <span id="typing-text"></span><span class="cursor"></span>
+        </h1>
+
+        <h2 class="subtitle">
+          Ing. de Software &amp; Desarrollador Full Stack
+        </h2>
+
+        <!-- Redes sociales -->
+        <div class="socials">
+          <a
+            href=https://www.linkedin.com/in/luisangel-pardave-maravi-021509361/
+            target="_blank"
+            rel="noopener"
+            class="social-link"
+            >LinkedIn</a
+          >
+          <a
+            href=https://github.com/luispardavemaravi-sketch
+            target="_blank"
+            rel="noopener"
+            class="social-link"
+            >GitHub</a
+          >
+          <a
+            href=https://www.instagram.com/luisangel__2006/
+            target="_blank"
+            rel="noopener"
+            class="social-link"
+            >Instagram</a
+          >
+          <a
+            href="https://tiktok.com/@luisangelpardave"
+            target="_blank"
+            rel="noopener"
+            class="social-link"
+            >TikTok</a
+          >
+        </div>
+
+        <!-- Separador decorativo -->
+        <div class="divider">
+          <span class="divider-line"></span>
+          <span class="divider-text">Conecta conmigo</span>
+          <span class="divider-line"></span>
+        </div>
+      </div>
+    </main>
 
 
-    <h4>-------- Conecta conmigo --------</h4>
-  </main>
-    <footer>
-       <h3>Contacto </h3>
-    <p> <a href="mailto:luispardavemaravi@gmail.com" >luispardavemaravi@gmail.com</a>
-    </p>
-      <p>&copy; 2024 Luisangel Pardave. Todos los derechos reservados.</p>
+
+  <!-- ═══════════════════════════════════
+       FOOTER — Barra de estado tipo IDE
+  ═══════════════════════════════════ -->
+    <footer class="footer">
+      <!-- Status bar -->
+      <div class="statusbar">
+        <div class="status-left">
+          <span class="status-item">
+            <span class="status-dot"></span>Ready
+          </span>
+          <span class="status-item status-hidden-sm">TypeScript React</span>
+          <span class="status-item status-hidden-md">UTF-8</span>
+          <span class="status-item status-hidden-md">LF</span>
+        </div>
+        <div class="status-right">
+          <span class="status-item status-hidden-sm">Ln 1, Col 1</span>
+          <span class="status-item status-hidden-sm">Spaces: 2</span>
+          <span class="status-item">&#128293; Live</span>
+        </div>
+      </div>
+
+      <!-- Terminal -->
+      <div class="terminal">
+        <div class="terminal-left">
+          <span class="t-cmd">$ npm run dev</span>
+          <span class="t-success"
+            >luisangel@portfolio: ~$ Portfolio built successfully</span
+          >
+          <span class="t-copy"
+            >&copy; 2025 Luisangel Pardave. All rights reserved</span
+          >
+        </div>
+        <div class="terminal-links">
+          <a
+            href=https://github.com/luispardavemaravi-sketch
+            target="_blank"
+            rel="noopener"
+            >./github.sh</a
+          >
+          <a
+            href=https://www.linkedin.com/in/luisangel-pardave-maravi-021509361/
+            target="_blank"
+            rel="noopener"
+            >./linkedin.sh</a
+          >
+          <a
+            href=https://www.instagram.com/luisangel__2006/
+            target="_blank"
+            rel="noopener"
+            >./instagram.sh</a
+          >
+          <a
+            href="https://tiktok.com/@luisangelpardave"
+            target="_blank"
+            rel="noopener"
+            >./tiktok.sh</a
+          >
+        </div>
+      </div>
     </footer>
+
+        <script src="script.js"></script>
   </body>
 
 </html>
